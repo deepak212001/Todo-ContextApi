@@ -60,6 +60,8 @@ function App() {
             </div>
             <div className="flex flex-col gap-y-3 rounded-3xl bg-white mt-5 p-5 py-8 w-full">
               {/*Loop and Add TodoItem here */}
+              <h2 className="text-lg font-bold  text-center text-black">Your-Task</h2>
+              {todos.length === 0 && <div className="text-center text-black">No Task to display </div>}
               {todos.map((todo) => (
                 <div key={todo.id} className='w-full'>
                   <TodoItem todo={todo} />
